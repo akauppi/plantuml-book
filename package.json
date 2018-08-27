@@ -12,6 +12,7 @@
     "clean": "rm -rf _book/*",
     "open": "open _book/index.html",
     "dist": "node_modules/.bin/gh-pages -d _book",
-    "predist": "npm run build"
+    "predist": "npm run build",
+    "prebuild": "make all"
   }
 }

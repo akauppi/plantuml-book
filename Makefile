@@ -6,8 +6,12 @@
 #	- docker
 #
 
-all: chapter1/hello.png chapter1/hello.svg \
+# Note: Images mentioned in the GitBook need to be explicitly mentioned here.
+#
+PICTURES = chapter1/hello.png chapter1/hello.svg \
 	chapter1/sequence-hello.png chapter1/sequence-hello.svg
+
+all: $(PICTURES)
 
 # PlantUML conversions
 %.png: %.uml

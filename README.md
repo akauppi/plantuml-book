@@ -29,10 +29,6 @@ $ brew install node@6
 $ export PATH="/usr/local/opt/node@6/bin:$PATH"
 ```
 
-```
-$ docker pull 
-```
-
 ### Why run via Docker?
 
 [PlantUML](http://plantuml.com) is used via a Docker image ([link](https://hub.docker.com/r/think/plantuml/)). This is easier (no separate installs of graphviz and a Java JAR), but most importantly safer. Running the binary does not have visibility to our host system, so any malicious code that could be injected (i.e. we don't really trust the PlantUML ecosystem) is sandboxed.
@@ -46,13 +42,19 @@ To get the necessary build tools installed:
 $ npm install
 ```
 
+```
+$ docker pull think/plantuml
+```
+
 Build the book:
 
 ```
 $ npm run build
 ```
 
-This creates `_book/index.html`. To serve the book locally:
+This converts the UML sources to pictures and creates `_book/index.html`. 
+
+To serve the book locally:
 
 ```
 $ npm run serve
