@@ -1,0 +1,14 @@
+{
+  "": "-- Ref. -> https://toolchain.gitbook.com/config.html",
+  "": "",
+  "": "-- Keep README.md just for GitHub welcome page, not part of the book",
+  "": "",
+  "structure": {
+    "readme": "_README.md",
+    "summary": "_SUMMARY.md"
+  },
+  "title": "Integration speciment",
+  "author": "asko.kauppi@stockmann.com",
+  "gitbook": ">= 3.2.3"
+}
+

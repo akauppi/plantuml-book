@@ -1,0 +1,12 @@
+# gitbook
+#
+/_book/
+
+# npm
+#
+/node_modules/
+/npm-debug.log
+
+# IntelliJ IDEA
+#
+/.idea/

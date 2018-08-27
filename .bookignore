@@ -1,0 +1,9 @@
+#
+# Files we don't want to end up in '_book/'
+#
+/README.md
+/DEV-NOTES.md
+/CHANGELOG.md
+
+/package.json
+/Makefile
