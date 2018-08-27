@@ -1,4 +1,7 @@
 # Some
 
-Bread text here.
+Here be diagrams.
 
+![](./hello.svg)
+
+![](./sequence-hello.svg)

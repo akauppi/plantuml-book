@@ -20,16 +20,23 @@ With programming languages, we use such diffs all the time. By describing the UM
 
 - `npm` version 6
 - gnu `make`
-- `graphviz`
+- Docker
 
 Installing on macOS, with HomeBrew:
 
 ```
 $ brew install node@6
 $ export PATH="/usr/local/opt/node@6/bin:$PATH"
-
-$ brew install graphviz
 ```
+
+```
+$ docker pull 
+```
+
+### Why run via Docker?
+
+[PlantUML](http://plantuml.com) is used via a Docker image ([link](https://hub.docker.com/r/think/plantuml/)). This is easier (no separate installs of graphviz and a Java JAR), but most importantly safer. Running the binary does not have visibility to our host system, so any malicious code that could be injected (i.e. we don't really trust the PlantUML ecosystem) is sandboxed.
+
 
 ## Building
 
@@ -74,3 +81,9 @@ $ npm run dist
 Updates the latest changes to ...tbd... .
 
 -->
+
+## References
+
+- PlantUML 
+  - [Web page](http://plantuml.com/)
+  - [GitHub repo](https://github.com/plantuml/plantuml)

@@ -10,3 +10,8 @@
 # IntelliJ IDEA
 #
 /.idea/
+
+# UML output files
+*.svg
+*.png
+
