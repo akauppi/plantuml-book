@@ -1,4 +1,0 @@
-@startuml
-' from http://plantuml.com/faq-install
-Alice -> Bob: test
-@enduml
