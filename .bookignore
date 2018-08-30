@@ -2,8 +2,15 @@
 # Files we don't want to end up in '_book/'
 #
 /README.md
-/DEV-NOTES.md
+/NOTES.md
 /CHANGELOG.md
+/LICENSE.md
+/TODO.md
 
 /package.json
 /Makefile
+
+# Source files not to the output
+*.uml
+-*.svg
+-*.png

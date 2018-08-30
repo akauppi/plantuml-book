@@ -11,6 +11,8 @@
 PICTURES = chapter1/hello.png chapter1/hello.svg \
 	chapter1/sequence-hello.png chapter1/sequence-hello.svg
 
+_BOOK=_book
+
 all: $(PICTURES)
 
 # PlantUML conversions
@@ -19,6 +21,9 @@ all: $(PICTURES)
 
 %.svg: %.uml
 	cat $< | docker run --rm -i think/plantuml > $@
+
+clean:
+	-rm -rf ${_BOOK}/*
 
 echo:
 	docker info

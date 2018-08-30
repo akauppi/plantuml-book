@@ -5,5 +5,5 @@
 - Note: titles in this file don't show.
 -->
 
-- Introduction
-  - [Some](chapter1/SOME.md)
+- Chapter 1
+  - [Diagrams](chapter1/DIAGRAMS.md)

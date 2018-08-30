@@ -1,19 +1,11 @@
-# Integration specimen
+# PlantUML & GitBook
 
-Experiment on creating UML diagrams (with the intention of describing integrations), from version controlled source. 
+Template that merges together two documentation technologies: [PlantUML](http://plantuml.com) and [GitBook](https://github.com/GitbookIO/gitbook). The intention is to create a version controlled workflow for describing integrations. 
 
-## Background & motivation
+- GitBook for basic book layout (chapters, search)
+- PlantUML for describing diagrams in text
 
-In summer 2018, some UML diagrams are used heavily within Stockmann to describe integrations. 
-
-- Sequence diagrams within Confluence pages, using [www.websequencediagrams.com](https://www.websequencediagrams.com)
-- [Draw.io](https://www.draw.io) diagrams embedded within Confluence pages
-
-The problem with these is that they don't provide a "diff", and that in turn leads to such diagrams being incompatible with a pull request -style workflow (where changes are suggested, discussed, and approved only once they go through multiple parties).
-
-Even if there was a way to see the changes introduced by one change to a diagram, the visual tools don't seem to provide "diff"s across arbitrary time points.
-
-With programming languages, we use such diffs all the time. By describing the UML diagrams as text, we can utilize the same workflows that we're using with code logic, also for visual presentations. This should lead to a win-win, without compromising something that's essential for managing change in a complex environment.
+The trick is in keeping the diagrams described as text which allows us to use normal Git tools (PRs, diffs) for discussing changes to such graphical entities. Replacing images by newer ones would lose the details on what actually changed. :)
 
 
 ## Requirements
@@ -42,10 +34,6 @@ To get the necessary build tools installed:
 $ npm install
 ```
 
-```
-$ docker pull think/plantuml
-```
-
 Build the book:
 
 ```
@@ -65,27 +53,34 @@ Serving book on http://localhost:4000
 
 Open [http://localhost:4000](http://localhost:4000).
 
-|Note|
-|---|
-|Unfortunately, opening the book with `file://` URL does not allow the links to work. This is likely a GitBook bug.|
-
+Don't try to open the book with `file://` URL since the links don't seem to work, then. Using `npm run serve` also has the added benefits that changes to the source files are automatically reflected in the viewed book (it's more of a "watch").
 
 
 ## Publishing
 
-<font color=red>tbd.</font>
-
-<!-- tbd.
 ```
 $ npm run dist
 ```
 
-Updates the latest changes to ...tbd... .
+Updates the latest changes to https://akauppi.github.io/plantuml-book/
 
--->
+Note: This is mostly a sample. You likely lack write access to the original repo.
+
+
+## Deriving your book
+
+For now, you will need to manually mention the diagrams to convert in the `PICTURES` set of the `Makefile`. Other than that, it's a fairly normal GitBook project.
+
+## Contributing
+
+Check the [Issues](https://github.com/akauppi/plantuml-book/issues) and if your idea isn't there yet, please let it be heard.
+
+Pull Requests, of course, are welcome. :)
+
 
 ## References
 
 - PlantUML 
   - [Web page](http://plantuml.com/)
   - [GitHub repo](https://github.com/plantuml/plantuml)
+
