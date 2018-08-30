@@ -84,3 +84,4 @@ Pull Requests, of course, are welcome. :)
   - [Web page](http://plantuml.com/)
   - [GitHub repo](https://github.com/plantuml/plantuml)
 
+- [GitBook Toolchain Documentation](https://toolchain.gitbook.com)

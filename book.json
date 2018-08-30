@@ -7,7 +7,7 @@
     "readme": "_README.md",
     "summary": "_SUMMARY.md"
   },
-  "title": "Integration speciment",
+  "title": "PlantUML sample",
   "author": "asko.kauppi@stockmann.com",
   "gitbook": ">= 3.2.3"
 }

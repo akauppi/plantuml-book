@@ -18,3 +18,18 @@ So, let's avoid spaces in paths and filenames, unless the bug is fixed.
 
 e.g. `SomeChapter/SomeFile.md` instead of `Some Chapter/Some File.md`.
 
+## "Is GitBook alive?"
+
+It's good to be aware of this:
+
+- https://github.com/GitbookIO/gitbook/issues/1808
+
+>It's obvious Gitbook has gone in a different direction. They've completely nixed statically generated docs, as well as plugins and pretty much everything that made Gitbook good while also making their name "GitBook" completely irrelevant.
+>
+>So shall we start an effort to fork, rename and maintain our beloved "Legacy" Gitbook?
+
+*Comment by a GitBook user (Aug 2018)*
+
+This does not change the usability of GitBook a lot. It just means there's likely no support, no changes...
+
+The mindset of this UML + markdown build setup can easily be adjusted to other similar (static content creation) tools. If you know of candidates, please create an Issue for discussion.

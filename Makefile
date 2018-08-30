@@ -5,13 +5,14 @@
 # Requires:
 #	- docker
 #
+# Note: By purpose, we don't step into the GitBook's area but only use the Makefile for creating the images for it.
+#	 	That is, this file is minion to the 'package.json'. This is mainly to keep the GitBook experience topmost.
 
 # Note: Images mentioned in the GitBook need to be explicitly mentioned here.
 #
-PICTURES = chapter1/hello.png chapter1/hello.svg \
+PICTURES = \
+	chapter1/hello.png chapter1/hello.svg \
 	chapter1/sequence-hello.png chapter1/sequence-hello.svg
-
-_BOOK=_book
 
 all: $(PICTURES)
 
@@ -23,7 +24,7 @@ all: $(PICTURES)
 	cat $< | docker run --rm -i think/plantuml > $@
 
 clean:
-	-rm -rf ${_BOOK}/*
+	-rm ${PICTURES}
 
 echo:
 	docker info
