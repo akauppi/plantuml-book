@@ -77,6 +77,18 @@ Check the [Issues](https://github.com/akauppi/plantuml-book/issues) and if your 
 
 Pull Requests, of course, are welcome. :)
 
+## GitBook hints
+
+### No Glossary may be best
+
+GitBooks allow a `GLOSSARY.md` which sounds neat, but may be distracting in practice. If you use it, *any* reference in the book becomes a link. Making a glossary by hand may be a better choice.
+
+
+### Footnotes
+
+GitHub flavoured markdown allows footnotes[^1]. They are pretty neat.
+
+[^1]: Side text that gets rendered at the bottom of the page. You can define the footnotes close to their reference.
 
 ## References
 

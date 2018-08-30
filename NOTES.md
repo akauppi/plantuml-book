@@ -33,3 +33,11 @@ It's good to be aware of this:
 This does not change the usability of GitBook a lot. It just means there's likely no support, no changes...
 
 The mindset of this UML + markdown build setup can easily be adjusted to other similar (static content creation) tools. If you know of candidates, please create an Issue for discussion.
+
+
+
+
+
+
+
+   
