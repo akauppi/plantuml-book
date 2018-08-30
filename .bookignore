@@ -9,6 +9,7 @@
 
 /package.json
 /Makefile
+/.circleci/
 
 # Source files not to the output
 *.uml
